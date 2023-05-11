@@ -29,4 +29,7 @@ describe('Context: My First Tests', () => {
     it('Test 5', () => {
         expect(true).to.equal('5'==5);
     })
+    it('Test-6', () => {
+        expect(true).to.equal(10==10);
+    })
 })
