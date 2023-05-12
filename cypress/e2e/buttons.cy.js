@@ -35,9 +35,8 @@ describe('Context: My First Tests', () => {
             }
         })
 
-
+        
         // npx cypress run --headless -b chrome
-
 
 
     })
