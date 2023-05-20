@@ -6,7 +6,7 @@ describe('Input Forms Tests', () => {
       cy.visit('/registration_form');
     });
   
-    it.skip('Check different input box fields and verify', () => {
+    it.('Check different input box fields and verify', () => {
       // fill the form for username and other info
       cy.get('input[name="firstname"]').type('Mike');
       cy.get('input[name="lastname"]').type('Brown');
@@ -23,7 +23,7 @@ describe('Input Forms Tests', () => {
       cy.get('input[name="phone"]').type(phoneNumber);
       cy.get('input[name="birthday"]').type('01/01/1999');
     });
-    it.skip('Check different radio button actions', () => {
+    it.('Check different radio button actions', () => {
       cy.get('.radio')
         .find('[type=radio]')
         .then((radio) => {
