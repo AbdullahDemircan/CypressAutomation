@@ -27,5 +27,10 @@ describe('Auth: Login user with different ways', () => {
     //
     cy.textExists('You logged into a secure area!');
     auth.logout();
-  });
+});
+it('Check invalid user credials', ()=>{
+    auth.login('incalid 1234', 'invalid1234');
+    cy.textExists('Your username is invalid!');
+})
+
 });
